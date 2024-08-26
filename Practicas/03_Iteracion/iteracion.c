@@ -116,6 +116,7 @@ int main()
     }
     */
     /* 5.1.19 */
+    /* Abrir
     // Arbolito 0.2
 
     int i, j, num, altura, cantidad_espacio;
@@ -139,12 +140,70 @@ int main()
             printf("*");
             if(j>1)
             {
-              printf("+");
+              printf("*");
             }
         }
         cantidad_espacio--;
         printf("\n");
     }
+    */
+
+    int i, j, hojas, altura, espacio;
+
+    printf("De que altura sera su arbol: ");
+    scanf("%d",&altura);
+
+    // Bucle principal: Arma el arbol
+
+    hojas = 0;
+    espacio = altura-1;
+
+    for(i=1;i<=altura;i++){
+
+        // Deja los espacios entre las hojas
+
+        for(j=1;j<=espacio;j++){
+            printf(" ");
+        }
+        espacio--;
+
+        // Dibuja las hojas
+
+        hojas++;
+        for(j=1;j<=hojas;j++){
+            printf("*");
+            if(j>1){
+              printf("*");
+            }
+        }
+        printf("\n");
+    }
+
+    // Dibujo la parte de abajo
+
+    hojas = altura;
+    espacio = 0;
+
+    for(i=1;i<=altura-1;i++){
+        espacio++;
+        for(j=1;j<=espacio;j++){
+            printf(" ");
+        }
+
+
+        hojas--;
+        for(j=hojas;j>=0;j--){
+            printf("*");
+            if(j<hojas-2){
+                printf("*");
+            }
+        }
+        printf("\n");
+
+    }
+
+
+
 
 
 

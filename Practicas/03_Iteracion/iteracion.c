@@ -205,10 +205,6 @@ int main()
 
 
 
-
-
-
-
     /* Abrir
     int i, num, suma;
 

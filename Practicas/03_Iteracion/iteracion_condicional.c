@@ -11,6 +11,7 @@ int main()
         printf("%d\n",pow);
         pow = pow*2;
     }*/
+    /*
 
     int i, day, month;
 
@@ -32,7 +33,9 @@ int main()
             i++;
         }
 
-    }
+    }*/
+
+
 
 
 
